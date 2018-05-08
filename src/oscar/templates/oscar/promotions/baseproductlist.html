@@ -3,9 +3,10 @@
 
 {% block content %}
 <section class="well well-blank">
-    <div class="sub-header">
-        <h3>{{ promotion.name }}</h3>
-    </div>
+  <header class="section-heading">
+      <h2>{{ promotion.name }}</h2>
+        <span></span>
+    </header>
 
     {{ promotion.description|safe }}
 
@@ -19,4 +20,5 @@
         <a href="{{ block.link_url }}">{% trans "See more" %}</a>
     {% endif %}
 </section>
+
 {% endblock %}
