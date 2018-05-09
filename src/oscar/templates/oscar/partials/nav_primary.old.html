@@ -1,20 +1,19 @@
 {% load currency_filters %}
 {% load category_tags %}
 {% load i18n %}
-<nav class="navbar navbar-default">
-    <div class="container-fluid nav-bar">
-    <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-      </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-def" id="bs-example-navbar-collapse-1">
+<div class="navbar primary navbar-static-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header pull-right">
+            {# This is used in mobile view #}
+            <a class="btn btn-default navbar-toggle collapsed" data-toggle="collapse" data-target=".primary-collapse">
+                <span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </span>
+            </a>
+        </div>
 
         <a class="btn btn-default navbar-btn btn-cart navbar-right visible-xs-inline-block" href="{% url 'basket:summary' %}">
             <i class="icon-shopping-cart"></i>
@@ -73,6 +72,4 @@
             <!--{% include "partials/search.html" %}-->
         </div><!-- /navbar-collapse -->
     </div>
-  </div>
-</div>
 </div><!-- /navbar -->
